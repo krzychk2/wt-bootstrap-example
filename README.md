@@ -1,26 +1,21 @@
 # wt-bootstrap-example
 Example code of using Bootstrap theme and Witty (libwt) written in C++
 
-This example is written as "spagetti code".
+This example is written as "spagetti code" for simple and quick testing.
 Every functional block for main elements is grouped in "{ }"
 
 Written for libwt 3.3.4
-
 Bootstrap theme: sb-admin-2 (https://startbootstrap.com/template-overviews/sb-admin-2/)
 
-#Compile
+# Compile
 
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+    g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+    g++  -o "wt-bootstrap"  ./src/main.o   -lboost_system -lwt -lwthttp
 
-#Link
+# Run
 
-g++  -o "wt-bootstrap"  ./src/main.o   -lboost_system -lwt -lwthttp
+    ./wt-bootstrap --docroot . --http-address 0.0.0.0 --http-port 8080
 
-
-#Run
-
-./wt-bootstrap --docroot . --http-address 0.0.0.0 --http-port 8080
-
-#Test
+# Test
 
 Start browser and type address http://127.0.0.1:8080/
