@@ -4,7 +4,8 @@ Example code of using Bootstrap theme and Witty (libwt) written in C++
 This example is written as "spagetti code" for simple and quick testing.
 Every functional block for main elements is grouped in "{ }"
 
-Written for libwt 3.3.4
+Written for libwt 3.3.4 on Ubuntu 16.04.4 LTS using distro libraries.
+
 Bootstrap theme: sb-admin-2 (https://startbootstrap.com/template-overviews/sb-admin-2/)
 
 ## Compile
